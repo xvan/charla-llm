@@ -1,0 +1,647 @@
+<!DOCTYPE html> <html lang=en data-theme=dark><!--
+ Page saved with SingleFile 
+ url: http://localhost:3210/#/session/ses_f11ca4c7cffeS7b97xKW8th35S/record/4 
+ saved date: Tue Sep 29 2026 14:50:02 GMT-0300 (Argentina Standard Time)
+--><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<title>OpenCode Trace</title>
+<style>html,body,#app{margin:0;padding:0}</style>
+<style>header[data-v-dac32c4f]{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:var(--bg-primary);border-bottom:1px solid var(--border);flex-shrink:0;min-height:48px}header h1[data-v-dac32c4f]{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;line-height:1}.header-actions[data-v-dac32c4f]{display:flex;align-items:center;gap:12px}.dropdown[data-v-dac32c4f]{position:relative}.dropdown-toggle[data-v-dac32c4f]{padding:8px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;transition:background .1s}.dropdown-toggle[data-v-dac32c4f]:hover{background:var(--bg-hover)}.dropdown-menu[data-v-dac32c4f]{position:absolute;right:0;top:100%;margin-top:4px;background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius);min-width:200px;z-index:100;padding:4px}.breadcrumb[data-v-1dcd01d0]{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-secondary);padding:8px 24px;background:var(--bg-primary);border-bottom:1px solid var(--border);flex-shrink:0;flex-wrap:wrap}.breadcrumb a[data-v-1dcd01d0]{color:var(--text-secondary);text-decoration:none}.breadcrumb a[data-v-1dcd01d0]:hover{color:var(--accent);text-decoration:underline}.sep[data-v-1dcd01d0]{color:var(--text-tertiary);margin:0 2px}.current[data-v-1dcd01d0]{color:var(--text-primary);font-weight:500}.fab-container[data-v-05bb3e02]{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:8px;z-index:50}.fab-scroll[data-v-05bb3e02]{width:40px;height:40px;border-radius:var(--radius);background:var(--bg-secondary);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:background .1s}.fab-scroll[data-v-05bb3e02]:hover{background:var(--bg-hover)}@keyframes toast-in-c0d5f9b8{0%{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.cs-group{display:inline-flex;align-items:center;gap:4px;margin-right:8px}.cs-label{font-size:11px;font-weight:700;padding:1px 5px;border-radius:2px}.cs-label.msg{background:#3d8bff26;color:var(--accent)}.cs-types{display:inline-flex;gap:3px}.cs-type{font-size:11px;font-weight:500;color:var(--text-secondary)}.cs-plus{color:var(--success);margin-left:2px}.cs-minus{color:var(--danger);margin-left:2px}.metadata-header[data-v-1868ccb6]{padding:12px 16px;background:var(--bg-tertiary);font-size:12px;font-weight:700;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.8px}.metadata-body[data-v-1868ccb6]{padding:16px}.stat-section[data-v-1868ccb6]{margin-bottom:12px}.stat-section[data-v-1868ccb6]:last-child{margin-bottom:0}.stat-section-title[data-v-1868ccb6]{font-size:11px;color:var(--text-tertiary);font-weight:600;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}.stat-row-inline[data-v-1868ccb6]{display:flex;gap:12px;flex-wrap:wrap}.stat-item[data-v-1868ccb6]{display:flex;align-items:center;gap:4px;font-size:12px;padding:4px 10px;background:var(--bg-tertiary);border-radius:var(--radius)}.stat-key[data-v-1868ccb6]{color:var(--text-tertiary);font-weight:500;font-size:10px;text-transform:uppercase;letter-spacing:.4px}.stat-key[data-v-1868ccb6]:after{content:":"}.stat-val[data-v-1868ccb6]{color:var(--text-primary);font-weight:600;font-family:var(--font-family);font-size:12px}.stat-item.highlight .stat-val[data-v-1868ccb6]{color:var(--accent)}.block-item[data-v-caa07bff]{margin-bottom:8px}.block-type-bar[data-v-caa07bff]{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;background:var(--bg-tertiary);border-radius:var(--radius) var(--radius)0 0;border:1px solid var(--border);border-bottom:none}.block-type-left[data-v-caa07bff]{display:flex;align-items:center;gap:8px;font-size:12px}.block-type-right[data-v-caa07bff]{display:flex;align-items:center;gap:4px}.block-type-tag[data-v-caa07bff]{font-weight:700;font-size:11px;padding:1px 6px;border-radius:2px}.block-type-tag.text[data-v-caa07bff]{background:#3d8bff26;color:var(--accent)}.block-type-tag.thinking[data-v-caa07bff]{background:#8b5cf626;color:var(--sys-color)}.block-type-tag.td[data-v-caa07bff]{background:#ff9f0a26;color:var(--warning)}.block-type-tag.tc[data-v-caa07bff],.block-type-tag.tr[data-v-caa07bff]{background:#30d15826;color:var(--success)}.toggle-btn[data-v-caa07bff]{font-size:11px;font-weight:700;padding:2px 6px;border-radius:2px;color:var(--text-tertiary);transition:color .1s,background .1s}.toggle-btn[data-v-caa07bff]:hover{color:var(--accent);background:#3d8bff1a}.block-content[data-v-caa07bff]{padding:10px 12px;background:var(--bg-primary);border:1px solid var(--border);border-radius:0 0 var(--radius) var(--radius);font-size:13px;line-height:1.6;overflow-x:auto;position:relative}.block-content.raw[data-v-caa07bff]{white-space:pre-wrap;word-break:break-word}.copy-btn[data-v-caa07bff]{position:absolute;top:6px;right:6px;padding:4px;border-radius:2px;opacity:0;transition:opacity .1s;z-index:1}.block-content:hover .copy-btn[data-v-caa07bff]{opacity:1}.copy-btn[data-v-caa07bff]:hover{background:var(--bg-hover)}.section-content[data-v-c5e69052]{margin-bottom:16px}.msg[data-v-c5e69052]{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden}.msg-header[data-v-c5e69052]{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--bg-tertiary);border-bottom:1px solid var(--border)}.msg-body[data-v-c5e69052]{padding:8px}.cat-tag[data-v-c5e69052]{font-size:11px;font-weight:700;padding:1px 6px;border-radius:2px}.cat-tag.sys[data-v-c5e69052]{background:#8b5cf626;color:var(--sys-color)}.cat-tag.tool[data-v-c5e69052]{background:#ff9f0a26;color:var(--warning)}.cat-tag.msg[data-v-c5e69052]{background:#3d8bff26;color:var(--accent)}.role-tag[data-v-c5e69052]{font-size:12px;font-weight:500;color:var(--text-secondary)}.view-toggle[data-v-57d357ff]{display:flex;gap:4px;margin-top:16px;margin-bottom:16px;padding:4px;background:var(--bg-tertiary);border-radius:var(--radius);width:fit-content}.view-toggle button[data-v-57d357ff]{padding:6px 16px;border-radius:var(--radius);font-size:13px;font-weight:500;color:var(--text-secondary);transition:background .1s,color .1s}.view-toggle button[data-v-57d357ff]:hover{color:var(--text-primary)}.view-toggle button.active[data-v-57d357ff]{background:var(--bg-primary);color:var(--text-primary);font-weight:700}.record-view-content[data-v-57d357ff]{margin-top:8px}*,*:before,*:after{box-sizing:border-box;margin:0;padding:0}:root{--oc-dark:#201d1d;--oc-light:#fdfcfc;--oc-mid:#9a9898;--oc-dark-surface:#302c2c;--oc-border-gray:#646262;--oc-light-surface:#f1eeee;--accent:#3d8bff;--accent-hover:#1a6fff;--accent-active:#0056b3;--danger:#ff3b30;--danger-hover:#d70015;--danger-active:#a50011;--success:#30d158;--warning:#ff9f0a;--warning-hover:#cc7f08;--warning-active:#995f06;--sys-color:#8b5cf6;--json-key-color:#a78bfa;--text-muted:#6e6e73;--text-secondary-light:#424245;--border-warm:rgba(15,0,0,.12);--border-tab:#9a9898;--border-outline:#646262;--input-bg:#f8f7f7;--bg-primary:var(--oc-dark);--bg-secondary:var(--oc-dark-surface);--bg-tertiary:rgba(253,252,252,.04);--bg-hover:rgba(253,252,252,.08);--text-primary:var(--oc-light);--text-secondary:var(--oc-mid);--text-tertiary:var(--text-muted);--border:rgba(100,98,98,.25);--added-bg:rgba(48,209,88,.08);--added-border:var(--success);--removed-bg:rgba(255,59,48,.08);--removed-border:var(--danger);--radius:4px;--radius-input:6px;--font-family:"Berkeley Mono","IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}html,body{height:100%;font-family:var(--font-family);background:var(--bg-primary);color:var(--text-primary);line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:underline;font-weight:500;transition:color .1s}a:hover{color:var(--accent-hover)}button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;font-size:inherit}.skip-link{position:absolute;top:-100px;left:50%;transform:translate(-50%);padding:8px 16px;background:var(--accent);color:var(--oc-light);font-weight:500;border-radius:var(--radius);z-index:1000;transition:top .2s}.skip-link:focus{top:8px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}#app{display:flex;flex-direction:column;height:100vh;overflow:hidden}main{flex:1;overflow-y:auto;padding:24px;-webkit-overflow-scrolling:touch}.container{max-width:1200px;margin:0 auto}@keyframes spin{to{transform:rotate(360deg)}}.page-title{font-size:38px;font-weight:700;line-height:1.5;margin-bottom:24px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.page-title .count{font-size:16px;font-weight:500;color:var(--text-secondary)}.page-title .subtitle{font-size:16px;font-weight:400;color:var(--text-tertiary)}.card{background:var(--bg-secondary);border:1px solid var(--border);border-radius:var(--radius)}.badge{display:inline-flex;align-items:center;padding:2px 8px;font-size:12px;font-weight:500;color:var(--text-secondary);background:var(--bg-tertiary);border-radius:var(--radius);white-space:nowrap}.section-title{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:8px 12px;background:var(--bg-tertiary);border-radius:var(--radius);margin-bottom:8px;cursor:pointer;-webkit-user-select:none;user-select:none;transition:background .1s}.section-title:hover{background:var(--bg-hover)}.section-arrow{transition:transform .2s ease;color:var(--text-secondary)}.section-title.expanded .section-arrow{transform:rotate(0)}</style>
+<meta name=referrer content=no-referrer><link rel=icon type=image/svg+xml href=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJyYW5kR3JhZCIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRjUxMkYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRjA5ODE5Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgCiAgICA8c3R5bGU+CiAgICAgIC5wYXRoLWFuaW0gewogICAgICAgIHN0cm9rZS1kYXNoYXJyYXk6IDQ0MDsKICAgICAgICBzdHJva2UtZGFzaG9mZnNldDogNDQwOwogICAgICAgIGFuaW1hdGlvbjogZHJhdyAyLjVzIGVhc2UtaW4tb3V0IGluZmluaXRlIGFsdGVybmF0ZTsKICAgICAgfQogICAgICAucHVsc2UtYW5pbSB7CiAgICAgICAgYW5pbWF0aW9uOiBwdWxzZSAxLjVzIGVhc2UtaW4tb3V0IGluZmluaXRlIGFsdGVybmF0ZTsKICAgICAgfQogICAgICBAa2V5ZnJhbWVzIGRyYXcgewogICAgICAgIDAlIHsgc3Ryb2tlLWRhc2hvZmZzZXQ6IDQ0MDsgfQogICAgICAgIDEwMCUgeyBzdHJva2UtZGFzaG9mZnNldDogMDsgfQogICAgICB9CiAgICAgIEBrZXlmcmFtZXMgcHVsc2UgewogICAgICAgIDAlIHsgcjogOHB4OyBvcGFjaXR5OiAxOyB9CiAgICAgICAgMTAwJSB7IHI6IDIwcHg7IG9wYWNpdHk6IDA7IH0KICAgICAgfQogICAgPC9zdHlsZT4KICA8L2RlZnM+CgogIDxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiByeD0iMjgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2UyZThmMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KCiAgPCEtLSDlupXlsYLngbDnmb3ovajpgZPvvIjmm7TnspfvvIkgLS0+CiAgPHBvbHlsaW5lIHBvaW50cz0iMjIsODkgMzksNTEgNTUsNzQgNzEsMjcgODcsNjAgMTAyLDQwIiAKICAgICAgICAgICAgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjFGNUY5IiBzdHJva2Utd2lkdGg9IjkiIAogICAgICAgICAgICBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSDliqjmgIHnlJ/plb/nmoQgQWdlbnQg6L2o6L+557q/77yI5pu057KX77yJIC0tPgogIDxwb2x5bGluZSBjbGFzcz0icGF0aC1hbmltIgogICAgICAgICAgICBwb2ludHM9IjIyLDg5IDM5LDUxIDU1LDc0IDcxLDI3IDg3LDYwIDEwMiw0MCIgCiAgICAgICAgICAgIGZpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNicmFuZEdyYWQpIiBzdHJva2Utd2lkdGg9IjgiIAogICAgICAgICAgICBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KCiAgPCEtLSDpnZnmgIHkuK3pl7ToioLngrnvvIjljYrlvoTmm7TlpKfvvIkgLS0+CiAgPGNpcmNsZSBjeD0iMzkiIGN5PSI1MSIgcj0iOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjRjk3MzE2IiBzdHJva2Utd2lkdGg9IjMiLz4KICA8Y2lyY2xlIGN4PSI1NSIgY3k9Ijc0IiByPSI4IiBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiNGOTczMTYiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxjaXJjbGUgY3g9IjcxIiBjeT0iMjciIHI9IjgiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI0Y1OUUwQiIgc3Ryb2tlLXdpZHRoPSIzIi8+CiAgPGNpcmNsZSBjeD0iODciIGN5PSI2MCIgcj0iOCIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjRjU5RTBCIiBzdHJva2Utd2lkdGg9IjMiLz4KICAKICA8IS0tIOi1t+Wni+iKgueCue+8iOWNiuW+hOabtOWkp++8iSAtLT4KICA8Y2lyY2xlIGN4PSIyMiIgY3k9Ijg5IiByPSI5IiBmaWxsPSIjRkY1MTJGIi8+CgogIDwhLS0g57uI54K577yI6ISJ5Yay6IyD5Zu06L+b5LiA5q2l5YaF5pS277yJIC0tPgogIDxjaXJjbGUgY2xhc3M9InB1bHNlLWFuaW0iIGN4PSIxMDIiIGN5PSI0MCIgcj0iOCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRjA5ODE5IiBzdHJva2Utd2lkdGg9IjMuNSIvPgogIDxjaXJjbGUgY3g9IjEwMiIgY3k9IjQwIiByPSI4LjUiIGZpbGw9IiNGMDk4MTkiLz4KPC9zdmc+><link rel=canonical href=http://localhost:3210/#/session/ses_f11ca4c7cffeS7b97xKW8th35S/record/4><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:; form-action 'none'; base-uri 'none';"></head>
+<body>
+ <div id=app data-v-app><a href=#main-content class=skip-link>Skip to content</a><div id=a11y-live-region class=sr-only role=status aria-live=polite aria-atomic=true></div><header data-v-dac32c4f><h1 data-v-dac32c4f><svg data-v-dac32c4f viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true width=20 height=20><path data-v-dac32c4f d="M12 2L2 7l10 5 10-5-10-5z"></path><path data-v-dac32c4f d="M2 17l10 5 10-5"></path><path data-v-dac32c4f d="M2 12l10 5 10-5"></path></svg> opencode-trace </h1><div data-v-dac32c4f class=header-actions><div data-v-dac32c4f class=dropdown><button data-v-dac32c4f class=dropdown-toggle aria-label="More actions" aria-expanded=false><svg data-v-dac32c4f width=16 height=16 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true><circle data-v-dac32c4f cx=12 cy=5 r=1></circle><circle data-v-dac32c4f cx=12 cy=12 r=1></circle><circle data-v-dac32c4f cx=12 cy=19 r=1></circle></svg></button><div data-v-dac32c4f class=dropdown-menu style=display:none></div></div></div></header><nav data-v-1dcd01d0 class=breadcrumb aria-label=Breadcrumb><a data-v-1dcd01d0 href=#/>Sessions</a><span data-v-1dcd01d0 class=sep>/</span><a data-v-1dcd01d0 href=#/session/ses_f11ca4c7cffeS7b97xKW8th35S>ses_f11ca4c7cffeS7b97xKW8th35S</a><span data-v-1dcd01d0 class=sep>/</span><span data-v-1dcd01d0 class=current>#4</span></nav><main id=main-content><div data-v-57d357ff class=container><div data-v-57d357ff class=page-title>Saludo <span data-v-57d357ff class=subtitle>ses_f11ca4c7cffeS7b97xKW8th35S</span><span data-v-57d357ff class=count>#4</span></div><div data-v-1868ccb6 data-v-57d357ff class="metadata-card card"><div data-v-1868ccb6 class=metadata-header>Record Metadata</div><div data-v-1868ccb6 class=metadata-body><div data-v-57d357ff class=stat-section><div data-v-57d357ff class=stat-section-title>Changes</div><div data-v-57d357ff class=stat-row-inline><span data-v-57d357ff><span class=cs-group><span class="cs-label msg">MSG</span><span class=cs-types><span class=cs-type>THINKING<span class=cs-plus>+1</span></span><span class=cs-type>TC<span class=cs-plus>+1</span><span class=cs-minus>-1</span></span><span class=cs-type>TR<span class=cs-plus>+1</span></span><span class=cs-type>TEXT<span class=cs-plus>+1</span></span></span></span></span></div></div><div data-v-1868ccb6 class=stat-section><div data-v-1868ccb6 class=stat-section-title>Request</div><div data-v-1868ccb6 class=stat-row-inline><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>URL</span><span data-v-1868ccb6 class=stat-val>http://127.0.0.1:11434/v1/chat/completions</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Method</span><span data-v-1868ccb6 class=stat-val>POST</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Status</span><span data-v-1868ccb6 class=stat-val>200</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>SSE</span><span data-v-1868ccb6 class=stat-val>true</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Model</span><span data-v-1868ccb6 class=stat-val>gemma4-max:latest</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Provider</span><span data-v-1868ccb6 class=stat-val>openai-chat</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Type</span><span data-v-1868ccb6 class=stat-val>USER</span></span></div></div><div data-v-1868ccb6 class=stat-section><div data-v-1868ccb6 class=stat-section-title>Token Usage</div><div data-v-1868ccb6 class=stat-row-inline><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Input (miss)</span><span data-v-1868ccb6 class=stat-val>7,185</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Input (hit)</span><span data-v-1868ccb6 class=stat-val>0</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Output</span><span data-v-1868ccb6 class=stat-val>11</span></span><span data-v-1868ccb6 class="stat-item highlight"><span data-v-1868ccb6 class=stat-key>Total</span><span data-v-1868ccb6 class=stat-val>7,196</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Hit Rate</span><span data-v-1868ccb6 class=stat-val>0.0%</span></span></div></div><div data-v-1868ccb6 class=stat-section><div data-v-1868ccb6 class=stat-section-title>Time Usage</div><div data-v-1868ccb6 class=stat-row-inline><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Request</span><span data-v-1868ccb6 class=stat-val>9/29/2026, 2:28:47 PM</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Response</span><span data-v-1868ccb6 class=stat-val>9/29/2026, 2:28:49 PM</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Gap</span><span data-v-1868ccb6 class=stat-val>3.8s</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>Duration</span><span data-v-1868ccb6 class=stat-val>2.6s</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>TTFT</span><span data-v-1868ccb6 class=stat-val>2,328.34ms</span></span><span data-v-1868ccb6 class=stat-item><span data-v-1868ccb6 class=stat-key>TPOT</span><span data-v-1868ccb6 class=stat-val>27.98ms</span></span></div></div></div></div><div data-v-57d357ff class=view-toggle><button data-v-57d357ff> Changes </button><button data-v-57d357ff class=active> Conversation </button><button data-v-57d357ff> Request </button><button data-v-57d357ff> Response </button></div><div data-v-57d357ff class=record-view-content><div data-v-c5e69052 class="section-title expanded"><svg data-v-c5e69052 class=section-arrow width=12 height=12 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2><path data-v-c5e69052 d="m6 9 6 6 6-6"></path></svg> SYSTEM PROMPT </div><div data-v-c5e69052 class="section-content expanded"><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag sys">SYS</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=text><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag text">TEXT</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>You are opencode, an interactive CLI tool that helps users with software engineering tasks. Use the instructions below and the tools available to you to assist the user.
+
+IMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.
+
+If the user asks for help or wants to give feedback inform them of the following:
+- /help: Get help with using opencode
+- To give feedback, users should report the issue at https://github.com/anomalyco/opencode/issues
+
+When the user directly asks about opencode (eg 'can opencode do...', 'does opencode have...') or asks in second person (eg 'are you able...', 'can you do...'), first use the WebFetch tool to gather information to answer the question from opencode docs at https://opencode.ai
+
+# Tone and style
+You should be concise, direct, and to the point. When you run a non-trivial bash command, you should explain what the command does and why you are running it, to make sure the user understands what you are doing (this is especially important when you are running a command that will make changes to the user's system).
+Remember that your output will be displayed on a command line interface. Your responses can use GitHub-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.
+Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like Bash or code comments as means to communicate with the user during the session.
+If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.
+Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.
+IMPORTANT: You should minimize output tokens as much as possible while maintaining helpfulness, quality, and accuracy. Only address the specific query or task at hand, avoiding tangential information unless absolutely critical for completing the request. If you can answer in 1-3 sentences or a short paragraph, please do.
+IMPORTANT: You should NOT answer with unnecessary preamble or postamble (such as explaining your code or summarizing your action), unless the user asks you to.
+IMPORTANT: Keep your responses short, since they will be displayed on a command line interface. You MUST answer concisely with fewer than 4 lines (not including tool use or code generation), unless user asks for detail. Answer the user's question directly, without elaboration, explanation, or details. One word answers are best. Avoid introductions, conclusions, and explanations. You MUST avoid text before/after your response, such as "The answer is &lt;answer&gt;.", "Here is the content of the file..." or "Based on the information provided, the answer is..." or "Here is what I will do next...". Here are some examples to demonstrate appropriate verbosity:
+&lt;example&gt;
+user: what is 2+2?
+assistant: 4
+&lt;/example&gt;
+
+&lt;example&gt;
+user: is 11 a prime number?
+assistant: Yes
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what command should I run to list files in the current directory?
+assistant: ls
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what command should I run to watch files in the current directory?
+assistant: [use the ls tool to list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]
+npm run dev
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what files are in the directory src/?
+assistant: [runs ls and sees foo.c, bar.c, baz.c]
+user: which file contains the implementation of foo?
+assistant: src/foo.c
+&lt;/example&gt;
+
+&lt;example&gt;
+user: write tests for new feature
+assistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]
+&lt;/example&gt;
+
+# Proactiveness
+You are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:
+1. Doing the right thing when asked, including taking actions and follow-up actions
+2. Not surprising the user with actions you take without asking
+For example, if the user asks you how to approach something, you should do your best to answer their question first, and not immediately jump into taking actions.
+3. Do not add additional code explanation summary unless requested by the user. After working on a file, just stop, rather than providing an explanation of what you did.
+
+# Following conventions
+When making changes to files, first understand the file's code conventions. Mimic code style, use existing libraries and utilities, and follow existing patterns.
+- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language).
+- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.
+- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.
+- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository.
+
+# Code style
+- IMPORTANT: DO NOT ADD ***ANY*** COMMENTS unless asked
+
+# Doing tasks
+The user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:
+- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.
+- Implement the solution using all tools available to you
+- Verify the solution if possible with tests. NEVER assume specific test framework or test script. Check the README or search codebase to determine the testing approach.
+- VERY IMPORTANT: When you have completed a task, you MUST run the lint and typecheck commands (e.g. npm run lint, npm run typecheck, ruff, etc.) with Bash if they were provided to you to ensure your code is correct. If you are unable to find the correct command, ask the user for the command to run and if they supply it, proactively suggest writing it to AGENTS.md so that you will know to run it next time.
+NEVER commit changes unless the user explicitly asks you to. It is VERY IMPORTANT to only commit when explicitly asked, otherwise the user will feel that you are being too proactive.
+
+- Tool results and user messages may include &lt;system-reminder&gt; tags. &lt;system-reminder&gt; tags contain useful information and reminders. They are NOT part of the user's provided input or the tool result.
+
+# Tool usage policy
+- When doing file search, prefer to use the Task tool in order to reduce context usage.
+- You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. When making multiple bash tool calls, you MUST send a single message with multiple tools calls to run the calls in parallel. For example, if you need to run "git status" and "git diff", send a single message with two tool calls to run the calls in parallel.
+
+You MUST answer concisely with fewer than 4 lines of text (not including tool use or code generation), unless user asks for detail.
+
+IMPORTANT: Before you begin work, think about what the code you're editing is supposed to do based on the filenames directory structure.
+
+# Code References
+
+When referencing specific functions or pieces of code include the pattern `file_path:line_number` to allow the user to easily navigate to the source code location.
+
+&lt;example&gt;
+user: Where are errors from the client handled?
+assistant: Clients are marked as failed in the `connectToServer` function in src/services/process.ts:712.
+&lt;/example&gt;
+
+You are powered by the model named gemma4-max:latest. The exact model ID is ollama/gemma4-max:latest
+Here is some useful information about the environment you are running in:
+&lt;env&gt;
+  Working directory: /tmp/ahh
+  Workspace root folder: /
+  Is directory a git repo: no
+  Platform: linux
+  Today's date: Tue Sep 29 2026
+&lt;/env&gt;
+Skills provide specialized instructions and workflows for specific tasks.
+Use the skill tool to load a skill when a task matches its description.
+&lt;available_skills&gt;
+  &lt;skill&gt;
+    &lt;name&gt;customize-opencode&lt;/name&gt;
+    &lt;description&gt;Use ONLY when the user is editing or creating opencode's own configuration: opencode.json, opencode.jsonc, files under .opencode/, or files under ~/.config/opencode/. Also use when creating or fixing opencode agents, subagents, skills, plugins, MCP servers, or permission rules. Do not use for the user's own application code, or for any project that is not configuring opencode itself.&lt;/description&gt;
+    &lt;location&gt;&amp;lt;built-in&amp;gt;&lt;/location&gt;
+  &lt;/skill&gt;
+&lt;/available_skills&gt;</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="You are opencode, an interactive CLI tool that helps users with software engineering tasks. Use the instructions below and the tools available to you to assist the user.
+
+IMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.
+
+If the user asks for help or wants to give feedback inform them of the following:
+- /help: Get help with using opencode
+- To give feedback, users should report the issue at https://github.com/anomalyco/opencode/issues
+
+When the user directly asks about opencode (eg 'can opencode do...', 'does opencode have...') or asks in second person (eg 'are you able...', 'can you do...'), first use the WebFetch tool to gather information to answer the question from opencode docs at https://opencode.ai
+
+# Tone and style
+You should be concise, direct, and to the point. When you run a non-trivial bash command, you should explain what the command does and why you are running it, to make sure the user understands what you are doing (this is especially important when you are running a command that will make changes to the user's system).
+Remember that your output will be displayed on a command line interface. Your responses can use GitHub-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.
+Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like Bash or code comments as means to communicate with the user during the session.
+If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.
+Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.
+IMPORTANT: You should minimize output tokens as much as possible while maintaining helpfulness, quality, and accuracy. Only address the specific query or task at hand, avoiding tangential information unless absolutely critical for completing the request. If you can answer in 1-3 sentences or a short paragraph, please do.
+IMPORTANT: You should NOT answer with unnecessary preamble or postamble (such as explaining your code or summarizing your action), unless the user asks you to.
+IMPORTANT: Keep your responses short, since they will be displayed on a command line interface. You MUST answer concisely with fewer than 4 lines (not including tool use or code generation), unless user asks for detail. Answer the user's question directly, without elaboration, explanation, or details. One word answers are best. Avoid introductions, conclusions, and explanations. You MUST avoid text before/after your response, such as &quot;The answer is <answer>.&quot;, &quot;Here is the content of the file...&quot; or &quot;Based on the information provided, the answer is...&quot; or &quot;Here is what I will do next...&quot;. Here are some examples to demonstrate appropriate verbosity:
+<example>
+user: what is 2+2?
+assistant: 4
+</example>
+
+<example>
+user: is 11 a prime number?
+assistant: Yes
+</example>
+
+<example>
+user: what command should I run to list files in the current directory?
+assistant: ls
+</example>
+
+<example>
+user: what command should I run to watch files in the current directory?
+assistant: [use the ls tool to list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]
+npm run dev
+</example>
+
+<example>
+user: what files are in the directory src/?
+assistant: [runs ls and sees foo.c, bar.c, baz.c]
+user: which file contains the implementation of foo?
+assistant: src/foo.c
+</example>
+
+<example>
+user: write tests for new feature
+assistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]
+</example>
+
+# Proactiveness
+You are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:
+1. Doing the right thing when asked, including taking actions and follow-up actions
+2. Not surprising the user with actions you take without asking
+For example, if the user asks you how to approach something, you should do your best to answer their question first, and not immediately jump into taking actions.
+3. Do not add additional code explanation summary unless requested by the user. After working on a file, just stop, rather than providing an explanation of what you did.
+
+# Following conventions
+When making changes to files, first understand the file's code conventions. Mimic code style, use existing libraries and utilities, and follow existing patterns.
+- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language).
+- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.
+- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.
+- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository.
+
+# Code style
+- IMPORTANT: DO NOT ADD ***ANY*** COMMENTS unless asked
+
+# Doing tasks
+The user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:
+- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.
+- Implement the solution using all tools available to you
+- Verify the solution if possible with tests. NEVER assume specific test framework or test script. Check the README or search codebase to determine the testing approach.
+- VERY IMPORTANT: When you have completed a task, you MUST run the lint and typecheck commands (e.g. npm run lint, npm run typecheck, ruff, etc.) with Bash if they were provided to you to ensure your code is correct. If you are unable to find the correct command, ask the user for the command to run and if they supply it, proactively suggest writing it to AGENTS.md so that you will know to run it next time.
+NEVER commit changes unless the user explicitly asks you to. It is VERY IMPORTANT to only commit when explicitly asked, otherwise the user will feel that you are being too proactive.
+
+- Tool results and user messages may include <system-reminder> tags. <system-reminder> tags contain useful information and reminders. They are NOT part of the user's provided input or the tool result.
+
+# Tool usage policy
+- When doing file search, prefer to use the Task tool in order to reduce context usage.
+- You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. When making multiple bash tool calls, you MUST send a single message with multiple tools calls to run the calls in parallel. For example, if you need to run &quot;git status&quot; and &quot;git diff&quot;, send a single message with two tool calls to run the calls in parallel.
+
+You MUST answer concisely with fewer than 4 lines of text (not including tool use or code generation), unless user asks for detail.
+
+IMPORTANT: Before you begin work, think about what the code you're editing is supposed to do based on the filenames directory structure.
+
+# Code References
+
+When referencing specific functions or pieces of code include the pattern `file_path:line_number` to allow the user to easily navigate to the source code location.
+
+<example>
+user: Where are errors from the client handled?
+assistant: Clients are marked as failed in the `connectToServer` function in src/services/process.ts:712.
+</example>
+
+You are powered by the model named gemma4-max:latest. The exact model ID is ollama/gemma4-max:latest
+Here is some useful information about the environment you are running in:
+<env>
+  Working directory: /tmp/ahh
+  Workspace root folder: /
+  Is directory a git repo: no
+  Platform: linux
+  Today's date: Tue Sep 29 2026
+</env>
+Skills provide specialized instructions and workflows for specific tasks.
+Use the skill tool to load a skill when a task matches its description.
+<available_skills>
+  <skill>
+    <name>customize-opencode</name>
+    <description>Use ONLY when the user is editing or creating opencode's own configuration: opencode.json, opencode.jsonc, files under .opencode/, or files under ~/.config/opencode/. Also use when creating or fixing opencode agents, subagents, skills, plugins, MCP servers, or permission rules. Do not use for the user's own application code, or for any project that is not configuring opencode itself.</description>
+    <location>&amp;lt;built-in&amp;gt;</location>
+  </skill>
+</available_skills>">You are opencode, an interactive CLI tool that helps users with software engineering tasks. Use the instructions below and the tools available to you to assist the user.
+
+IMPORTANT: You must NEVER generate or guess URLs for the user unless you are confident that the URLs are for helping the user with programming. You may use URLs provided by the user in their messages or local files.
+
+If the user asks for help or wants to give feedback inform them of the following:
+- /help: Get help with using opencode
+- To give feedback, users should report the issue at https://github.com/anomalyco/opencode/issues
+
+When the user directly asks about opencode (eg 'can opencode do...', 'does opencode have...') or asks in second person (eg 'are you able...', 'can you do...'), first use the WebFetch tool to gather information to answer the question from opencode docs at https://opencode.ai
+
+# Tone and style
+You should be concise, direct, and to the point. When you run a non-trivial bash command, you should explain what the command does and why you are running it, to make sure the user understands what you are doing (this is especially important when you are running a command that will make changes to the user's system).
+Remember that your output will be displayed on a command line interface. Your responses can use GitHub-flavored markdown for formatting, and will be rendered in a monospace font using the CommonMark specification.
+Output text to communicate with the user; all text you output outside of tool use is displayed to the user. Only use tools to complete tasks. Never use tools like Bash or code comments as means to communicate with the user during the session.
+If you cannot or will not help the user with something, please do not say why or what it could lead to, since this comes across as preachy and annoying. Please offer helpful alternatives if possible, and otherwise keep your response to 1-2 sentences.
+Only use emojis if the user explicitly requests it. Avoid using emojis in all communication unless asked.
+IMPORTANT: You should minimize output tokens as much as possible while maintaining helpfulness, quality, and accuracy. Only address the specific query or task at hand, avoiding tangential information unless absolutely critical for completing the request. If you can answer in 1-3 sentences or a short paragraph, please do.
+IMPORTANT: You should NOT answer with unnecessary preamble or postamble (such as explaining your code or summarizing your action), unless the user asks you to.
+IMPORTANT: Keep your responses short, since they will be displayed on a command line interface. You MUST answer concisely with fewer than 4 lines (not including tool use or code generation), unless user asks for detail. Answer the user's question directly, without elaboration, explanation, or details. One word answers are best. Avoid introductions, conclusions, and explanations. You MUST avoid text before/after your response, such as "The answer is &lt;answer&gt;.", "Here is the content of the file..." or "Based on the information provided, the answer is..." or "Here is what I will do next...". Here are some examples to demonstrate appropriate verbosity:
+&lt;example&gt;
+user: what is 2+2?
+assistant: 4
+&lt;/example&gt;
+
+&lt;example&gt;
+user: is 11 a prime number?
+assistant: Yes
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what command should I run to list files in the current directory?
+assistant: ls
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what command should I run to watch files in the current directory?
+assistant: [use the ls tool to list the files in the current directory, then read docs/commands in the relevant file to find out how to watch files]
+npm run dev
+&lt;/example&gt;
+
+&lt;example&gt;
+user: what files are in the directory src/?
+assistant: [runs ls and sees foo.c, bar.c, baz.c]
+user: which file contains the implementation of foo?
+assistant: src/foo.c
+&lt;/example&gt;
+
+&lt;example&gt;
+user: write tests for new feature
+assistant: [uses grep and glob search tools to find where similar tests are defined, uses concurrent read file tool use blocks in one tool call to read relevant files at the same time, uses edit file tool to write new tests]
+&lt;/example&gt;
+
+# Proactiveness
+You are allowed to be proactive, but only when the user asks you to do something. You should strive to strike a balance between:
+1. Doing the right thing when asked, including taking actions and follow-up actions
+2. Not surprising the user with actions you take without asking
+For example, if the user asks you how to approach something, you should do your best to answer their question first, and not immediately jump into taking actions.
+3. Do not add additional code explanation summary unless requested by the user. After working on a file, just stop, rather than providing an explanation of what you did.
+
+# Following conventions
+When making changes to files, first understand the file's code conventions. Mimic code style, use existing libraries and utilities, and follow existing patterns.
+- NEVER assume that a given library is available, even if it is well known. Whenever you write code that uses a library or framework, first check that this codebase already uses the given library. For example, you might look at neighboring files, or check the package.json (or cargo.toml, and so on depending on the language).
+- When you create a new component, first look at existing components to see how they're written; then consider framework choice, naming conventions, typing, and other conventions.
+- When you edit a piece of code, first look at the code's surrounding context (especially its imports) to understand the code's choice of frameworks and libraries. Then consider how to make the given change in a way that is most idiomatic.
+- Always follow security best practices. Never introduce code that exposes or logs secrets and keys. Never commit secrets or keys to the repository.
+
+# Code style
+- IMPORTANT: DO NOT ADD ***ANY*** COMMENTS unless asked
+
+# Doing tasks
+The user will primarily request you perform software engineering tasks. This includes solving bugs, adding new functionality, refactoring code, explaining code, and more. For these tasks the following steps are recommended:
+- Use the available search tools to understand the codebase and the user's query. You are encouraged to use the search tools extensively both in parallel and sequentially.
+- Implement the solution using all tools available to you
+- Verify the solution if possible with tests. NEVER assume specific test framework or test script. Check the README or search codebase to determine the testing approach.
+- VERY IMPORTANT: When you have completed a task, you MUST run the lint and typecheck commands (e.g. npm run lint, npm run typecheck, ruff, etc.) with Bash if they were provided to you to ensure your code is correct. If you are unable to find the correct command, ask the user for the command to run and if they supply it, proactively suggest writing it to AGENTS.md so that you will know to run it next time.
+NEVER commit changes unless the user explicitly asks you to. It is VERY IMPORTANT to only commit when explicitly asked, otherwise the user will feel that you are being too proactive.
+
+- Tool results and user messages may include &lt;system-reminder&gt; tags. &lt;system-reminder&gt; tags contain useful information and reminders. They are NOT part of the user's provided input or the tool result.
+
+# Tool usage policy
+- When doing file search, prefer to use the Task tool in order to reduce context usage.
+- You have the capability to call multiple tools in a single response. When multiple independent pieces of information are requested, batch your tool calls together for optimal performance. When making multiple bash tool calls, you MUST send a single message with multiple tools calls to run the calls in parallel. For example, if you need to run "git status" and "git diff", send a single message with two tool calls to run the calls in parallel.
+
+You MUST answer concisely with fewer than 4 lines of text (not including tool use or code generation), unless user asks for detail.
+
+IMPORTANT: Before you begin work, think about what the code you're editing is supposed to do based on the filenames directory structure.
+
+# Code References
+
+When referencing specific functions or pieces of code include the pattern `file_path:line_number` to allow the user to easily navigate to the source code location.
+
+&lt;example&gt;
+user: Where are errors from the client handled?
+assistant: Clients are marked as failed in the `connectToServer` function in src/services/process.ts:712.
+&lt;/example&gt;
+
+You are powered by the model named gemma4-max:latest. The exact model ID is ollama/gemma4-max:latest
+Here is some useful information about the environment you are running in:
+&lt;env&gt;
+  Working directory: /tmp/ahh
+  Workspace root folder: /
+  Is directory a git repo: no
+  Platform: linux
+  Today's date: Tue Sep 29 2026
+&lt;/env&gt;
+Skills provide specialized instructions and workflows for specific tasks.
+Use the skill tool to load a skill when a task matches its description.
+&lt;available_skills&gt;
+  &lt;skill&gt;
+    &lt;name&gt;customize-opencode&lt;/name&gt;
+    &lt;description&gt;Use ONLY when the user is editing or creating opencode's own configuration: opencode.json, opencode.jsonc, files under .opencode/, or files under ~/.config/opencode/. Also use when creating or fixing opencode agents, subagents, skills, plugins, MCP servers, or permission rules. Do not use for the user's own application code, or for any project that is not configuring opencode itself.&lt;/description&gt;
+    &lt;location&gt;&amp;lt;built-in&amp;gt;&lt;/location&gt;
+  &lt;/skill&gt;
+&lt;/available_skills&gt;</textarea></div></div></div></div><div data-v-c5e69052 class="section-title expanded"><svg data-v-c5e69052 class=section-arrow width=12 height=12 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2><path data-v-c5e69052 d="m6 9 6 6 6-6"></path></svg> TOOL DEFINITIONS </div><div data-v-c5e69052 class="section-content expanded"><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag tool">TOOL</span><span data-v-c5e69052 class=badge>14 tools</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>bash</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Executes a given bash command in a persistent shell session with optional timeout, ensuring proper handling and security measures.
+
+Be aware: OS: linux, Shell: bash
+
+All commands run in the current working directory by default. Use the `workdir` parameter if you need to run a command in a different directory. AVOID using `cd &lt;directory&gt; &amp;&amp; &lt;command&gt;` patterns - use `workdir` instead.
+
+Use `/tmp/opencode` for temporary work outside the workspace. This directory has already been created, already exists, and is pre-approved for external directory access.
+
+IMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.
+
+Before executing the command, please follow these steps:
+
+1. Directory Verification:
+   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location
+   - For example, before running "mkdir foo/bar", first use `ls foo` to check that "foo" exists and is the intended parent directory
+
+2. Command Execution:
+   - Always quote file paths that contain spaces with double quotes (e.g., rm "path with spaces/file.txt")
+   - Examples of proper quoting:
+     - mkdir "/Users/name/My Documents" (correct)
+     - mkdir /Users/name/My Documents (incorrect - will fail)
+     - python "/path/with spaces/script.py" (correct)
+     - python /path/with spaces/script.py (incorrect - will fail)
+   - After ensuring proper quoting, execute the command.
+   - Capture the output of the command.
+
+Usage notes:
+  - The command argument is required.
+  - You can specify an optional timeout in milliseconds. If not specified, commands will time out after 120000ms.
+  - If the output exceeds 2000 lines or 51200 bytes, it will be truncated and the full output will be written to a file. You can use Read with offset/limit to read specific sections or Grep to search the full content. Do NOT use `head`, `tail`, or other truncation commands to limit output; the full output will already be captured to a file for more precise searching.
+
+  - Avoid using Bash with the `find`, `grep`, `cat`, `head`, `tail`, `sed`, `awk`, or `echo` commands, unless explicitly instructed or when these commands are truly necessary for the task. Instead, always prefer using the dedicated tools for these commands:
+    - File search: Use Glob (NOT find or ls)
+    - Content search: Use Grep (NOT grep or rg)
+    - Read files: Use Read (NOT cat/head/tail)
+    - Edit files: Use Edit (NOT sed/awk)
+    - Write files: Use Write (NOT echo &gt;/cat &lt;&lt;EOF)
+    - Communication: Output text directly (NOT echo/printf)
+  - When issuing multiple commands:
+    - If the commands are independent and can run in parallel, make multiple bash tool calls in a single message. For example, if you need to run "git status" and "git diff", send a single message with two bash tool calls in parallel.
+    - If the commands depend on each other and must run sequentially, use a single Bash call with '&amp;&amp;' to chain them together (e.g., `git add . &amp;&amp; git commit -m "message" &amp;&amp; git push`). For instance, if one operation must complete before another starts (like mkdir before cp, Write before Bash for git operations, or git add before git commit), run these operations sequentially instead.
+    - Use ';' only when you need to run commands sequentially but don't care if earlier commands fail
+    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)
+  - AVOID using `cd &lt;directory&gt; &amp;&amp; &lt;command&gt;`. Use the `workdir` parameter to change directories instead.
+    &lt;good-example&gt;
+    Use workdir="/foo/bar" with command: pytest tests
+    &lt;/good-example&gt;
+    &lt;bad-example&gt;
+    cd /foo/bar &amp;&amp; pytest tests
+    &lt;/bad-example&gt;
+
+# Git and GitHub
+- Only commit, amend, push, or create PRs when explicitly requested.
+- Before committing, inspect `git status`, `git diff`, and `git log --oneline -10`; stage only intended files and never commit secrets.
+- Write a concise commit message that matches the repo style.
+- Do not update git config, skip hooks, use interactive `-i`, force-push, or create empty commits unless explicitly requested.
+- If a commit fails or hooks reject it, fix the issue and create a new commit; do not amend the failed commit.
+- Before creating a PR, inspect status, diff, remote tracking, recent commits, and the diff from the base branch.
+- Review all commits included in the PR, not just the latest commit.
+- Use `gh` for GitHub tasks, including PRs, issues, checks, and releases; return the PR URL when done.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;bash&quot;,
+  &quot;description&quot;: &quot;Executes a given bash command in a persistent shell session with optional timeout, ensuring proper handling and security measures.\n\nBe aware: OS: linux, Shell: bash\n\nAll commands run in the current working directory by default. Use the `workdir` parameter if you need to run a command in a different directory. AVOID using `cd <directory> &amp;&amp; <command>` patterns - use `workdir` instead.\n\nUse `/tmp/opencode` for temporary work outside the workspace. This directory has already been created, already exists, and is pre-approved for external directory access.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \&quot;mkdir foo/bar\&quot;, first use `ls foo` to check that \&quot;foo\&quot; exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., rm \&quot;path with spaces/file.txt\&quot;)\n   - Examples of proper quoting:\n     - mkdir \&quot;/Users/name/My Documents\&quot; (correct)\n     - mkdir /Users/name/My Documents (incorrect - will fail)\n     - python \&quot;/path/with spaces/script.py\&quot; (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - The command argument is required.\n  - You can specify an optional timeout in milliseconds. If not specified, commands will time out after 120000ms.\n  - If the output exceeds 2000 lines or 51200 bytes, it will be truncated and the full output will be written to a file. You can use Read with offset/limit to read specific sections or Grep to search the full content. Do NOT use `head`, `tail`, or other truncation commands to limit output; the full output will already be captured to a file for more precise searching.\n\n  - Avoid using Bash with the `find`, `grep`, `cat`, `head`, `tail`, `sed`, `awk`, or `echo` commands, unless explicitly instructed or when these commands are truly necessary for the task. Instead, always prefer using the dedicated tools for these commands:\n    - File search: Use Glob (NOT find or ls)\n    - Content search: Use Grep (NOT grep or rg)\n    - Read files: Use Read (NOT cat/head/tail)\n    - Edit files: Use Edit (NOT sed/awk)\n    - Write files: Use Write (NOT echo >/cat <<EOF)\n    - Communication: Output text directly (NOT echo/printf)\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple bash tool calls in a single message. For example, if you need to run \&quot;git status\&quot; and \&quot;git diff\&quot;, send a single message with two bash tool calls in parallel.\n    - If the commands depend on each other and must run sequentially, use a single Bash call with '&amp;&amp;' to chain them together (e.g., `git add . &amp;&amp; git commit -m \&quot;message\&quot; &amp;&amp; git push`). For instance, if one operation must complete before another starts (like mkdir before cp, Write before Bash for git operations, or git add before git commit), run these operations sequentially instead.\n    - Use ';' only when you need to run commands sequentially but don't care if earlier commands fail\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - AVOID using `cd <directory> &amp;&amp; <command>`. Use the `workdir` parameter to change directories instead.\n    <good-example>\n    Use workdir=\&quot;/foo/bar\&quot; with command: pytest tests\n    </good-example>\n    <bad-example>\n    cd /foo/bar &amp;&amp; pytest tests\n    </bad-example>\n\n# Git and GitHub\n- Only commit, amend, push, or create PRs when explicitly requested.\n- Before committing, inspect `git status`, `git diff`, and `git log --oneline -10`; stage only intended files and never commit secrets.\n- Write a concise commit message that matches the repo style.\n- Do not update git config, skip hooks, use interactive `-i`, force-push, or create empty commits unless explicitly requested.\n- If a commit fails or hooks reject it, fix the issue and create a new commit; do not amend the failed commit.\n- Before creating a PR, inspect status, diff, remote tracking, recent commits, and the diff from the base branch.\n- Review all commits included in the PR, not just the latest commit.\n- Use `gh` for GitHub tasks, including PRs, issues, checks, and releases; return the PR URL when done.\n&quot;
+}">{
+  "name": "bash",
+  "description": "Executes a given bash command in a persistent shell session with optional timeout, ensuring proper handling and security measures.\n\nBe aware: OS: linux, Shell: bash\n\nAll commands run in the current working directory by default. Use the `workdir` parameter if you need to run a command in a different directory. AVOID using `cd &lt;directory&gt; &amp;&amp; &lt;command&gt;` patterns - use `workdir` instead.\n\nUse `/tmp/opencode` for temporary work outside the workspace. This directory has already been created, already exists, and is pre-approved for external directory access.\n\nIMPORTANT: This tool is for terminal operations like git, npm, docker, etc. DO NOT use it for file operations (reading, writing, editing, searching, finding files) - use the specialized tools for this instead.\n\nBefore executing the command, please follow these steps:\n\n1. Directory Verification:\n   - If the command will create new directories or files, first use `ls` to verify the parent directory exists and is the correct location\n   - For example, before running \"mkdir foo/bar\", first use `ls foo` to check that \"foo\" exists and is the intended parent directory\n\n2. Command Execution:\n   - Always quote file paths that contain spaces with double quotes (e.g., rm \"path with spaces/file.txt\")\n   - Examples of proper quoting:\n     - mkdir \"/Users/name/My Documents\" (correct)\n     - mkdir /Users/name/My Documents (incorrect - will fail)\n     - python \"/path/with spaces/script.py\" (correct)\n     - python /path/with spaces/script.py (incorrect - will fail)\n   - After ensuring proper quoting, execute the command.\n   - Capture the output of the command.\n\nUsage notes:\n  - The command argument is required.\n  - You can specify an optional timeout in milliseconds. If not specified, commands will time out after 120000ms.\n  - If the output exceeds 2000 lines or 51200 bytes, it will be truncated and the full output will be written to a file. You can use Read with offset/limit to read specific sections or Grep to search the full content. Do NOT use `head`, `tail`, or other truncation commands to limit output; the full output will already be captured to a file for more precise searching.\n\n  - Avoid using Bash with the `find`, `grep`, `cat`, `head`, `tail`, `sed`, `awk`, or `echo` commands, unless explicitly instructed or when these commands are truly necessary for the task. Instead, always prefer using the dedicated tools for these commands:\n    - File search: Use Glob (NOT find or ls)\n    - Content search: Use Grep (NOT grep or rg)\n    - Read files: Use Read (NOT cat/head/tail)\n    - Edit files: Use Edit (NOT sed/awk)\n    - Write files: Use Write (NOT echo &gt;/cat &lt;&lt;EOF)\n    - Communication: Output text directly (NOT echo/printf)\n  - When issuing multiple commands:\n    - If the commands are independent and can run in parallel, make multiple bash tool calls in a single message. For example, if you need to run \"git status\" and \"git diff\", send a single message with two bash tool calls in parallel.\n    - If the commands depend on each other and must run sequentially, use a single Bash call with '&amp;&amp;' to chain them together (e.g., `git add . &amp;&amp; git commit -m \"message\" &amp;&amp; git push`). For instance, if one operation must complete before another starts (like mkdir before cp, Write before Bash for git operations, or git add before git commit), run these operations sequentially instead.\n    - Use ';' only when you need to run commands sequentially but don't care if earlier commands fail\n    - DO NOT use newlines to separate commands (newlines are ok in quoted strings)\n  - AVOID using `cd &lt;directory&gt; &amp;&amp; &lt;command&gt;`. Use the `workdir` parameter to change directories instead.\n    &lt;good-example&gt;\n    Use workdir=\"/foo/bar\" with command: pytest tests\n    &lt;/good-example&gt;\n    &lt;bad-example&gt;\n    cd /foo/bar &amp;&amp; pytest tests\n    &lt;/bad-example&gt;\n\n# Git and GitHub\n- Only commit, amend, push, or create PRs when explicitly requested.\n- Before committing, inspect `git status`, `git diff`, and `git log --oneline -10`; stage only intended files and never commit secrets.\n- Write a concise commit message that matches the repo style.\n- Do not update git config, skip hooks, use interactive `-i`, force-push, or create empty commits unless explicitly requested.\n- If a commit fails or hooks reject it, fix the issue and create a new commit; do not amend the failed commit.\n- Before creating a PR, inspect status, diff, remote tracking, recent commits, and the diff from the base branch.\n- Review all commits included in the PR, not just the latest commit.\n- Use `gh` for GitHub tasks, including PRs, issues, checks, and releases; return the PR URL when done.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>edit</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Performs exact string replacements in files. 
+
+Usage:
+- You must use your `Read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file. 
+- When editing text from Read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: line number + colon + space (e.g., `1: `). Everything after that space is the actual file content to match. Never include any part of the line number prefix in the oldString or newString.
+- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.
+- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.
+- The edit will FAIL if `oldString` is not found in the file with an error "oldString not found in content".
+- The edit will FAIL if `oldString` is found multiple times in the file with an error "Found multiple matches for oldString. Provide more surrounding lines in oldString to identify the correct match." Either provide a larger string with more surrounding context to make it unique or use `replaceAll` to change every instance of `oldString`. 
+- Use `replaceAll` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "edit",
+  "description": "Performs exact string replacements in files. \n\nUsage:\n- You must use your `Read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file. \n- When editing text from Read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: line number + colon + space (e.g., `1: `). Everything after that space is the actual file content to match. Never include any part of the line number prefix in the oldString or newString.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `oldString` is not found in the file with an error \"oldString not found in content\".\n- The edit will FAIL if `oldString` is found multiple times in the file with an error \"Found multiple matches for oldString. Provide more surrounding lines in oldString to identify the correct match.\" Either provide a larger string with more surrounding context to make it unique or use `replaceAll` to change every instance of `oldString`. \n- Use `replaceAll` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.\n"
+}'>{
+  "name": "edit",
+  "description": "Performs exact string replacements in files. \n\nUsage:\n- You must use your `Read` tool at least once in the conversation before editing. This tool will error if you attempt an edit without reading the file. \n- When editing text from Read tool output, ensure you preserve the exact indentation (tabs/spaces) as it appears AFTER the line number prefix. The line number prefix format is: line number + colon + space (e.g., `1: `). Everything after that space is the actual file content to match. Never include any part of the line number prefix in the oldString or newString.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- Only use emojis if the user explicitly requests it. Avoid adding emojis to files unless asked.\n- The edit will FAIL if `oldString` is not found in the file with an error \"oldString not found in content\".\n- The edit will FAIL if `oldString` is found multiple times in the file with an error \"Found multiple matches for oldString. Provide more surrounding lines in oldString to identify the correct match.\" Either provide a larger string with more surrounding context to make it unique or use `replaceAll` to change every instance of `oldString`. \n- Use `replaceAll` for replacing and renaming strings across the file. This parameter is useful if you want to rename a variable for instance.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>glob</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>- Fast file pattern matching tool that works with any codebase size
+- Supports glob patterns like "**/*.js" or "src/**/*.ts"
+- Returns matching file paths
+- Use this tool when you need to find files by name patterns
+- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead
+- You have the capability to call multiple tools in a single response. It is always better to speculatively perform multiple searches as a batch that are potentially useful.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "glob",
+  "description": "- Fast file pattern matching tool that works with any codebase size\n- Supports glob patterns like \"**/*.js\" or \"src/**/*.ts\"\n- Returns matching file paths\n- Use this tool when you need to find files by name patterns\n- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead\n- You have the capability to call multiple tools in a single response. It is always better to speculatively perform multiple searches as a batch that are potentially useful.\n"
+}'>{
+  "name": "glob",
+  "description": "- Fast file pattern matching tool that works with any codebase size\n- Supports glob patterns like \"**/*.js\" or \"src/**/*.ts\"\n- Returns matching file paths\n- Use this tool when you need to find files by name patterns\n- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead\n- You have the capability to call multiple tools in a single response. It is always better to speculatively perform multiple searches as a batch that are potentially useful.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>grep</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>- Fast content search tool that works with any codebase size
+- Searches file contents using regular expressions
+- Supports full regex syntax (eg. "log.*Error", "function\s+\w+", etc.)
+- Filter files by pattern with the include parameter (eg. "*.js", "*.{ts,tsx}")
+- Returns file paths and line numbers with matching lines
+- Use this tool when you need to find files containing specific patterns
+- If you need to identify/count the number of matches within files, use the Bash tool with `rg` (ripgrep) directly. Do NOT use `grep`.
+- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "grep",
+  "description": "- Fast content search tool that works with any codebase size\n- Searches file contents using regular expressions\n- Supports full regex syntax (eg. \"log.*Error\", \"function\\s+\\w+\", etc.)\n- Filter files by pattern with the include parameter (eg. \"*.js\", \"*.{ts,tsx}\")\n- Returns file paths and line numbers with matching lines\n- Use this tool when you need to find files containing specific patterns\n- If you need to identify/count the number of matches within files, use the Bash tool with `rg` (ripgrep) directly. Do NOT use `grep`.\n- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead\n"
+}'>{
+  "name": "grep",
+  "description": "- Fast content search tool that works with any codebase size\n- Searches file contents using regular expressions\n- Supports full regex syntax (eg. \"log.*Error\", \"function\\s+\\w+\", etc.)\n- Filter files by pattern with the include parameter (eg. \"*.js\", \"*.{ts,tsx}\")\n- Returns file paths and line numbers with matching lines\n- Use this tool when you need to find files containing specific patterns\n- If you need to identify/count the number of matches within files, use the Bash tool with `rg` (ripgrep) directly. Do NOT use `grep`.\n- When you are doing an open-ended search that may require multiple rounds of globbing and grepping, use the Task tool instead\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>question</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Use this tool when you need to ask the user questions during execution. This allows you to:
+1. Gather user preferences or requirements
+2. Clarify ambiguous instructions
+3. Get decisions on implementation choices as you work
+4. Offer choices to the user about what direction to take.
+
+Usage notes:
+- When `custom` is enabled (default), a "Type your own answer" option is added automatically; don't include "Other" or catch-all options
+- Answers are returned as arrays of labels; set `multiple: true` to allow selecting more than one
+- If you recommend a specific option, make that the first option in the list and add "(Recommended)" at the end of the label
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;question&quot;,
+  &quot;description&quot;: &quot;Use this tool when you need to ask the user questions during execution. This allows you to:\n1. Gather user preferences or requirements\n2. Clarify ambiguous instructions\n3. Get decisions on implementation choices as you work\n4. Offer choices to the user about what direction to take.\n\nUsage notes:\n- When `custom` is enabled (default), a \&quot;Type your own answer\&quot; option is added automatically; don't include \&quot;Other\&quot; or catch-all options\n- Answers are returned as arrays of labels; set `multiple: true` to allow selecting more than one\n- If you recommend a specific option, make that the first option in the list and add \&quot;(Recommended)\&quot; at the end of the label\n&quot;
+}">{
+  "name": "question",
+  "description": "Use this tool when you need to ask the user questions during execution. This allows you to:\n1. Gather user preferences or requirements\n2. Clarify ambiguous instructions\n3. Get decisions on implementation choices as you work\n4. Offer choices to the user about what direction to take.\n\nUsage notes:\n- When `custom` is enabled (default), a \"Type your own answer\" option is added automatically; don't include \"Other\" or catch-all options\n- Answers are returned as arrays of labels; set `multiple: true` to allow selecting more than one\n- If you recommend a specific option, make that the first option in the list and add \"(Recommended)\" at the end of the label\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>read</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Read a file or directory from the local filesystem. If the path does not exist, an error is returned.
+
+Usage:
+- The filePath parameter should be an absolute path.
+- By default, this tool returns up to 2000 lines from the start of the file.
+- The offset parameter is the line number to start from (1-indexed).
+- To read later sections, call this tool again with a larger offset.
+- Use the grep tool to find specific content in large files or files with long lines.
+- If you are unsure of the correct file path, use the glob tool to look up filenames by glob pattern.
+- Contents are returned with each line prefixed by its line number as `&lt;line&gt;: &lt;content&gt;`. For example, if a file has contents "foo\n", you will receive "1: foo\n". For directories, entries are returned one per line (without line numbers) with a trailing `/` for subdirectories.
+- Any line longer than 2000 characters is truncated.
+- Call this tool in parallel when you know there are multiple files you want to read.
+- Avoid tiny repeated slices (30 line chunks). If you need more context, read a larger window.
+- This tool can read image files and PDFs and return them as file attachments.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "read",
+  "description": "Read a file or directory from the local filesystem. If the path does not exist, an error is returned.\n\nUsage:\n- The filePath parameter should be an absolute path.\n- By default, this tool returns up to 2000 lines from the start of the file.\n- The offset parameter is the line number to start from (1-indexed).\n- To read later sections, call this tool again with a larger offset.\n- Use the grep tool to find specific content in large files or files with long lines.\n- If you are unsure of the correct file path, use the glob tool to look up filenames by glob pattern.\n- Contents are returned with each line prefixed by its line number as `<line>: <content>`. For example, if a file has contents \"foo\\n\", you will receive \"1: foo\\n\". For directories, entries are returned one per line (without line numbers) with a trailing `/` for subdirectories.\n- Any line longer than 2000 characters is truncated.\n- Call this tool in parallel when you know there are multiple files you want to read.\n- Avoid tiny repeated slices (30 line chunks). If you need more context, read a larger window.\n- This tool can read image files and PDFs and return them as file attachments.\n"
+}'>{
+  "name": "read",
+  "description": "Read a file or directory from the local filesystem. If the path does not exist, an error is returned.\n\nUsage:\n- The filePath parameter should be an absolute path.\n- By default, this tool returns up to 2000 lines from the start of the file.\n- The offset parameter is the line number to start from (1-indexed).\n- To read later sections, call this tool again with a larger offset.\n- Use the grep tool to find specific content in large files or files with long lines.\n- If you are unsure of the correct file path, use the glob tool to look up filenames by glob pattern.\n- Contents are returned with each line prefixed by its line number as `&lt;line&gt;: &lt;content&gt;`. For example, if a file has contents \"foo\\n\", you will receive \"1: foo\\n\". For directories, entries are returned one per line (without line numbers) with a trailing `/` for subdirectories.\n- Any line longer than 2000 characters is truncated.\n- Call this tool in parallel when you know there are multiple files you want to read.\n- Avoid tiny repeated slices (30 line chunks). If you need more context, read a larger window.\n- This tool can read image files and PDFs and return them as file attachments.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>skill</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Load a specialized skill when the task at hand matches one of the skills listed in the system prompt.
+
+Use this tool to inject the skill's instructions and resources into current conversation. The output may contain detailed workflow guidance as well as references to scripts, files, etc in the same directory as the skill.
+
+The skill name must match one of the skills listed in your system prompt.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;skill&quot;,
+  &quot;description&quot;: &quot;Load a specialized skill when the task at hand matches one of the skills listed in the system prompt.\n\nUse this tool to inject the skill's instructions and resources into current conversation. The output may contain detailed workflow guidance as well as references to scripts, files, etc in the same directory as the skill.\n\nThe skill name must match one of the skills listed in your system prompt.\n&quot;
+}">{
+  "name": "skill",
+  "description": "Load a specialized skill when the task at hand matches one of the skills listed in the system prompt.\n\nUse this tool to inject the skill's instructions and resources into current conversation. The output may contain detailed workflow guidance as well as references to scripts, files, etc in the same directory as the skill.\n\nThe skill name must match one of the skills listed in your system prompt.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>task</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Launch a new agent to handle complex, multistep tasks autonomously.
+
+When using the Task tool, you must specify a subagent_type parameter to select which agent type to use.
+
+When NOT to use the Task tool:
+- If you want to read a specific file path, use the Read or Glob tool instead of the Task tool, to find the match more quickly
+- If you are searching for a specific class definition like "class Foo", use the Grep tool instead, to find the match more quickly
+- If you are searching for code within a specific file or set of 2-3 files, use the Read tool instead of the Task tool, to find the match more quickly
+- If no available agent is a good fit for the task, use other tools directly
+
+
+Usage notes:
+1. Launch multiple agents concurrently whenever possible, to maximize performance; to do that, use a single message with multiple tool uses
+2. Once you have delegated work to an agent, do not duplicate that work yourself. Continue with non-overlapping tasks, or wait for the result. For background tasks, you will be notified automatically when the result is ready.
+3. When the agent is done, it will return a single message back to you. The result returned by the agent is not visible to the user. To show the user the result, you should send a text message back to the user with a concise summary of the result. The output includes a task_id you can reuse later to continue the same subagent session.
+4. Each agent invocation starts with a fresh context unless you provide task_id to resume the same subagent session (which continues with its previous messages and tool outputs). When starting fresh, your prompt should contain a highly detailed task description for the agent to perform autonomously and you should specify exactly what information the agent should return back to you in its final and only message to you.
+5. The agent's outputs should generally be trusted
+6. Clearly tell the agent whether you expect it to write code or just to do research (search, file reads, web fetches, etc.), since it is not aware of the user's intent. Tell it how to verify its work if possible (e.g., relevant test commands).
+7. If the agent description mentions that it should be used proactively, then you should try your best to use it without the user having to ask for it first. Use your judgement.
+
+Available agent types and the tools they have access to:
+- explore: Fast agent specialized for exploring codebases. Use this when you need to quickly find files by patterns (eg. "src/components/**/*.tsx"), search code for keywords (eg. "API endpoints"), or answer questions about the codebase (eg. "how do API endpoints work?"). When calling this agent, specify the desired thoroughness level: "quick" for basic searches, "medium" for moderate exploration, or "very thorough" for comprehensive analysis across multiple locations and naming conventions.
+- general: General-purpose agent for researching complex questions and executing multi-step tasks. Use this agent to execute multiple units of work in parallel.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;task&quot;,
+  &quot;description&quot;: &quot;Launch a new agent to handle complex, multistep tasks autonomously.\n\nWhen using the Task tool, you must specify a subagent_type parameter to select which agent type to use.\n\nWhen NOT to use the Task tool:\n- If you want to read a specific file path, use the Read or Glob tool instead of the Task tool, to find the match more quickly\n- If you are searching for a specific class definition like \&quot;class Foo\&quot;, use the Grep tool instead, to find the match more quickly\n- If you are searching for code within a specific file or set of 2-3 files, use the Read tool instead of the Task tool, to find the match more quickly\n- If no available agent is a good fit for the task, use other tools directly\n\n\nUsage notes:\n1. Launch multiple agents concurrently whenever possible, to maximize performance; to do that, use a single message with multiple tool uses\n2. Once you have delegated work to an agent, do not duplicate that work yourself. Continue with non-overlapping tasks, or wait for the result. For background tasks, you will be notified automatically when the result is ready.\n3. When the agent is done, it will return a single message back to you. The result returned by the agent is not visible to the user. To show the user the result, you should send a text message back to the user with a concise summary of the result. The output includes a task_id you can reuse later to continue the same subagent session.\n4. Each agent invocation starts with a fresh context unless you provide task_id to resume the same subagent session (which continues with its previous messages and tool outputs). When starting fresh, your prompt should contain a highly detailed task description for the agent to perform autonomously and you should specify exactly what information the agent should return back to you in its final and only message to you.\n5. The agent's outputs should generally be trusted\n6. Clearly tell the agent whether you expect it to write code or just to do research (search, file reads, web fetches, etc.), since it is not aware of the user's intent. Tell it how to verify its work if possible (e.g., relevant test commands).\n7. If the agent description mentions that it should be used proactively, then you should try your best to use it without the user having to ask for it first. Use your judgement.\n\nAvailable agent types and the tools they have access to:\n- explore: Fast agent specialized for exploring codebases. Use this when you need to quickly find files by patterns (eg. \&quot;src/components/**/*.tsx\&quot;), search code for keywords (eg. \&quot;API endpoints\&quot;), or answer questions about the codebase (eg. \&quot;how do API endpoints work?\&quot;). When calling this agent, specify the desired thoroughness level: \&quot;quick\&quot; for basic searches, \&quot;medium\&quot; for moderate exploration, or \&quot;very thorough\&quot; for comprehensive analysis across multiple locations and naming conventions.\n- general: General-purpose agent for researching complex questions and executing multi-step tasks. Use this agent to execute multiple units of work in parallel.&quot;
+}">{
+  "name": "task",
+  "description": "Launch a new agent to handle complex, multistep tasks autonomously.\n\nWhen using the Task tool, you must specify a subagent_type parameter to select which agent type to use.\n\nWhen NOT to use the Task tool:\n- If you want to read a specific file path, use the Read or Glob tool instead of the Task tool, to find the match more quickly\n- If you are searching for a specific class definition like \"class Foo\", use the Grep tool instead, to find the match more quickly\n- If you are searching for code within a specific file or set of 2-3 files, use the Read tool instead of the Task tool, to find the match more quickly\n- If no available agent is a good fit for the task, use other tools directly\n\n\nUsage notes:\n1. Launch multiple agents concurrently whenever possible, to maximize performance; to do that, use a single message with multiple tool uses\n2. Once you have delegated work to an agent, do not duplicate that work yourself. Continue with non-overlapping tasks, or wait for the result. For background tasks, you will be notified automatically when the result is ready.\n3. When the agent is done, it will return a single message back to you. The result returned by the agent is not visible to the user. To show the user the result, you should send a text message back to the user with a concise summary of the result. The output includes a task_id you can reuse later to continue the same subagent session.\n4. Each agent invocation starts with a fresh context unless you provide task_id to resume the same subagent session (which continues with its previous messages and tool outputs). When starting fresh, your prompt should contain a highly detailed task description for the agent to perform autonomously and you should specify exactly what information the agent should return back to you in its final and only message to you.\n5. The agent's outputs should generally be trusted\n6. Clearly tell the agent whether you expect it to write code or just to do research (search, file reads, web fetches, etc.), since it is not aware of the user's intent. Tell it how to verify its work if possible (e.g., relevant test commands).\n7. If the agent description mentions that it should be used proactively, then you should try your best to use it without the user having to ask for it first. Use your judgement.\n\nAvailable agent types and the tools they have access to:\n- explore: Fast agent specialized for exploring codebases. Use this when you need to quickly find files by patterns (eg. \"src/components/**/*.tsx\"), search code for keywords (eg. \"API endpoints\"), or answer questions about the codebase (eg. \"how do API endpoints work?\"). When calling this agent, specify the desired thoroughness level: \"quick\" for basic searches, \"medium\" for moderate exploration, or \"very thorough\" for comprehensive analysis across multiple locations and naming conventions.\n- general: General-purpose agent for researching complex questions and executing multi-step tasks. Use this agent to execute multiple units of work in parallel."
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>todowrite</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Create and maintain a structured task list for the current coding session. Tracks progress, organizes multi-step work, and surfaces status to the user.
+
+## When to use
+Use proactively when:
+- The task requires 3+ distinct steps or actions (not just 3 tool calls for a single conceptual step)
+- The work is non-trivial and benefits from planning
+- The user provides multiple tasks (numbered or comma-separated) or explicitly asks for a todo list
+- New instructions arrive - capture them as todos
+- You start a task - mark it `in_progress` (only one at a time) before working
+- You finish a task - mark it `completed` and add any follow-ups discovered during the work
+
+## When NOT to use
+Skip when:
+- The work is a single, straightforward task (or &lt;3 trivial steps)
+- The request is purely informational or conversational
+- Tracking adds no organizational value
+
+## States
+- `pending` - not started
+- `in_progress` - actively working (exactly ONE at a time)
+- `completed` - finished successfully
+- `cancelled` - no longer needed
+
+## Rules
+- Update status in real time; don't batch completions
+- Mark `completed` only after the required work is actually done, including any required verification. Never based on intent.
+- Keep exactly one `in_progress` while work remains
+- If blocked or partial, keep it `in_progress` and add a follow-up todo describing the blocker
+- Preserve user-provided commands verbatim (flags, args, order)
+- Items should be specific and actionable; break large work into smaller steps
+
+## Examples
+
+Use it:
+- "Add a dark mode toggle and run the tests" -&gt; multi-step feature + explicit verification
+- "Rename getCwd -&gt; getCurrentWorkingDirectory across the repo" -&gt; grep reveals 15 occurrences in 8 files
+- "Implement registration, catalog, cart, checkout" -&gt; multiple complex features
+
+Skip it:
+- "How do I print Hello World in Python?" -&gt; informational
+- "Add a comment to calculateTotal" -&gt; single edit
+- "Run npm install and tell me what happened" -&gt; one command
+
+When in doubt, use it.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;todowrite&quot;,
+  &quot;description&quot;: &quot;Create and maintain a structured task list for the current coding session. Tracks progress, organizes multi-step work, and surfaces status to the user.\n\n## When to use\nUse proactively when:\n- The task requires 3+ distinct steps or actions (not just 3 tool calls for a single conceptual step)\n- The work is non-trivial and benefits from planning\n- The user provides multiple tasks (numbered or comma-separated) or explicitly asks for a todo list\n- New instructions arrive - capture them as todos\n- You start a task - mark it `in_progress` (only one at a time) before working\n- You finish a task - mark it `completed` and add any follow-ups discovered during the work\n\n## When NOT to use\nSkip when:\n- The work is a single, straightforward task (or <3 trivial steps)\n- The request is purely informational or conversational\n- Tracking adds no organizational value\n\n## States\n- `pending` - not started\n- `in_progress` - actively working (exactly ONE at a time)\n- `completed` - finished successfully\n- `cancelled` - no longer needed\n\n## Rules\n- Update status in real time; don't batch completions\n- Mark `completed` only after the required work is actually done, including any required verification. Never based on intent.\n- Keep exactly one `in_progress` while work remains\n- If blocked or partial, keep it `in_progress` and add a follow-up todo describing the blocker\n- Preserve user-provided commands verbatim (flags, args, order)\n- Items should be specific and actionable; break large work into smaller steps\n\n## Examples\n\nUse it:\n- \&quot;Add a dark mode toggle and run the tests\&quot; -> multi-step feature + explicit verification\n- \&quot;Rename getCwd -> getCurrentWorkingDirectory across the repo\&quot; -> grep reveals 15 occurrences in 8 files\n- \&quot;Implement registration, catalog, cart, checkout\&quot; -> multiple complex features\n\nSkip it:\n- \&quot;How do I print Hello World in Python?\&quot; -> informational\n- \&quot;Add a comment to calculateTotal\&quot; -> single edit\n- \&quot;Run npm install and tell me what happened\&quot; -> one command\n\nWhen in doubt, use it.\n&quot;
+}">{
+  "name": "todowrite",
+  "description": "Create and maintain a structured task list for the current coding session. Tracks progress, organizes multi-step work, and surfaces status to the user.\n\n## When to use\nUse proactively when:\n- The task requires 3+ distinct steps or actions (not just 3 tool calls for a single conceptual step)\n- The work is non-trivial and benefits from planning\n- The user provides multiple tasks (numbered or comma-separated) or explicitly asks for a todo list\n- New instructions arrive - capture them as todos\n- You start a task - mark it `in_progress` (only one at a time) before working\n- You finish a task - mark it `completed` and add any follow-ups discovered during the work\n\n## When NOT to use\nSkip when:\n- The work is a single, straightforward task (or &lt;3 trivial steps)\n- The request is purely informational or conversational\n- Tracking adds no organizational value\n\n## States\n- `pending` - not started\n- `in_progress` - actively working (exactly ONE at a time)\n- `completed` - finished successfully\n- `cancelled` - no longer needed\n\n## Rules\n- Update status in real time; don't batch completions\n- Mark `completed` only after the required work is actually done, including any required verification. Never based on intent.\n- Keep exactly one `in_progress` while work remains\n- If blocked or partial, keep it `in_progress` and add a follow-up todo describing the blocker\n- Preserve user-provided commands verbatim (flags, args, order)\n- Items should be specific and actionable; break large work into smaller steps\n\n## Examples\n\nUse it:\n- \"Add a dark mode toggle and run the tests\" -&gt; multi-step feature + explicit verification\n- \"Rename getCwd -&gt; getCurrentWorkingDirectory across the repo\" -&gt; grep reveals 15 occurrences in 8 files\n- \"Implement registration, catalog, cart, checkout\" -&gt; multiple complex features\n\nSkip it:\n- \"How do I print Hello World in Python?\" -&gt; informational\n- \"Add a comment to calculateTotal\" -&gt; single edit\n- \"Run npm install and tell me what happened\" -&gt; one command\n\nWhen in doubt, use it.\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>trace_off</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Disable trace recording for the current session.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "trace_off",
+  "description": "Disable trace recording for the current session."
+}'>{
+  "name": "trace_off",
+  "description": "Disable trace recording for the current session."
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>trace_on</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Enable trace recording for the current session.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "trace_on",
+  "description": "Enable trace recording for the current session."
+}'>{
+  "name": "trace_on",
+  "description": "Enable trace recording for the current session."
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>trace_status</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Show current trace recording status across all scopes (global, local, session) and the effective recording state and storage location.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "trace_status",
+  "description": "Show current trace recording status across all scopes (global, local, session) and the effective recording state and storage location."
+}'>{
+  "name": "trace_status",
+  "description": "Show current trace recording status across all scopes (global, local, session) and the effective recording state and storage location."
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>webfetch</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>- Fetches content from a specified URL
+- Takes a URL and optional format as input
+- Fetches the URL content, converts to requested format (markdown by default)
+- Returns the content in the specified format
+- Use this tool when you need to retrieve and analyze web content
+
+Usage notes:
+  - IMPORTANT: if another tool is present that offers better web fetching capabilities, is more targeted to the task, or has fewer restrictions, prefer using that tool instead of this one.
+  - The URL must be a fully-formed valid URL
+  - HTTP URLs will be automatically upgraded to HTTPS
+  - Format options: "markdown" (default), "text", or "html"
+  - This tool is read-only and does not modify any files
+  - Results may be summarized if the content is very large
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{
+  "name": "webfetch",
+  "description": "- Fetches content from a specified URL\n- Takes a URL and optional format as input\n- Fetches the URL content, converts to requested format (markdown by default)\n- Returns the content in the specified format\n- Use this tool when you need to retrieve and analyze web content\n\nUsage notes:\n  - IMPORTANT: if another tool is present that offers better web fetching capabilities, is more targeted to the task, or has fewer restrictions, prefer using that tool instead of this one.\n  - The URL must be a fully-formed valid URL\n  - HTTP URLs will be automatically upgraded to HTTPS\n  - Format options: \"markdown\" (default), \"text\", or \"html\"\n  - This tool is read-only and does not modify any files\n  - Results may be summarized if the content is very large\n"
+}'>{
+  "name": "webfetch",
+  "description": "- Fetches content from a specified URL\n- Takes a URL and optional format as input\n- Fetches the URL content, converts to requested format (markdown by default)\n- Returns the content in the specified format\n- Use this tool when you need to retrieve and analyze web content\n\nUsage notes:\n  - IMPORTANT: if another tool is present that offers better web fetching capabilities, is more targeted to the task, or has fewer restrictions, prefer using that tool instead of this one.\n  - The URL must be a fully-formed valid URL\n  - HTTP URLs will be automatically upgraded to HTTPS\n  - Format options: \"markdown\" (default), \"text\", or \"html\"\n  - This tool is read-only and does not modify any files\n  - Results may be summarized if the content is very large\n"
+}</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=td><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag td">TD</span><span data-v-caa07bff><span class=tool-meta-name>write</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Writes a file to the local filesystem.
+
+Usage:
+- This tool will overwrite the existing file if there is one at the provided path.
+- If this is an existing file, you MUST use the Read tool first to read the file's contents. This tool will fail if you did not read the file first.
+- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.
+- NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
+- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="{
+  &quot;name&quot;: &quot;write&quot;,
+  &quot;description&quot;: &quot;Writes a file to the local filesystem.\n\nUsage:\n- This tool will overwrite the existing file if there is one at the provided path.\n- If this is an existing file, you MUST use the Read tool first to read the file's contents. This tool will fail if you did not read the file first.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.\n&quot;
+}">{
+  "name": "write",
+  "description": "Writes a file to the local filesystem.\n\nUsage:\n- This tool will overwrite the existing file if there is one at the provided path.\n- If this is an existing file, you MUST use the Read tool first to read the file's contents. This tool will fail if you did not read the file first.\n- ALWAYS prefer editing existing files in the codebase. NEVER write new files unless explicitly required.\n- NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.\n- Only use emojis if the user explicitly requests it. Avoid writing emojis to files unless asked.\n"
+}</textarea></div></div></div></div><div data-v-c5e69052 class="section-title expanded"><svg data-v-c5e69052 class=section-arrow width=12 height=12 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2><path data-v-c5e69052 d="m6 9 6 6 6-6"></path></svg> MESSAGES </div><div data-v-c5e69052 class="section-content expanded"><div data-v-c5e69052 class=msg-list><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>user</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=text><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag text">TEXT</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>hola</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value=hola>hola</textarea></div></div></div><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>assistant</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=thinking><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag thinking">THINKING</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>The user said "hola" (Spanish for "hello").
+I need to respond concisely and directly.
+According to the instructions: "You MUST answer concisely with fewer than 4 lines... Answer the user's question directly, without elaboration, explanation, or details."
+Since it's a greeting, a simple greeting back is appropriate.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="The user said &quot;hola&quot; (Spanish for &quot;hello&quot;).
+I need to respond concisely and directly.
+According to the instructions: &quot;You MUST answer concisely with fewer than 4 lines... Answer the user's question directly, without elaboration, explanation, or details.&quot;
+Since it's a greeting, a simple greeting back is appropriate.">The user said "hola" (Spanish for "hello").
+I need to respond concisely and directly.
+According to the instructions: "You MUST answer concisely with fewer than 4 lines... Answer the user's question directly, without elaboration, explanation, or details."
+Since it's a greeting, a simple greeting back is appropriate.</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=text><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag text">TEXT</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Hola</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value=Hola>Hola</textarea></div></div></div><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>user</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=text><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag text">TEXT</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>decime la version de python</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="decime la version de python">decime la version de python</textarea></div></div></div><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>assistant</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=thinking><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag thinking">THINKING</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>The user is asking for the Python version. I should run a bash command to check this.</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="The user is asking for the Python version. I should run a bash command to check this.">The user is asking for the Python version. I should run a bash command to check this.</textarea></div><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=tc><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag tc">TC</span><span data-v-caa07bff><span class=tool-meta-name>bash</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>{"command":"python3 --version"}</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value='{"command":"python3 --version"}'>{"command":"python3 --version"}</textarea></div></div></div><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>tool</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=tr><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag tr">TR</span><span data-v-caa07bff><span class=tool-meta-id>Tool result: call_9ogubvj6</span></span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Python 3.10.12
+</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="Python 3.10.12
+">Python 3.10.12
+</textarea></div></div></div><div data-v-c5e69052 class=msg><div data-v-c5e69052 class=msg-header><span data-v-c5e69052 class="cat-tag msg">MSG</span><span data-v-c5e69052 class=role-tag>assistant</span></div><div data-v-c5e69052 class=msg-body><div data-v-caa07bff data-v-c5e69052 class=block-item data-block-type=text><div data-v-caa07bff class=block-type-bar><div data-v-caa07bff class=block-type-left><span data-v-caa07bff class="block-type-tag text">TEXT</span></div><div data-v-caa07bff class=block-type-right><button data-v-caa07bff class=toggle-btn aria-label="Toggle between rendered and raw view" data-mode=raw> &lt;/&gt; </button></div></div><div data-v-caa07bff class="block-content raw"><button data-v-caa07bff class=copy-btn aria-label="Copy this content"><svg data-v-caa07bff width=14 height=14 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><rect data-v-caa07bff x=9 y=9 width=13 height=13 rx=2 ry=2></rect><path data-v-caa07bff d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></button><div data-v-caa07bff>Python 3.10.12</div></div><textarea data-v-caa07bff class=raw-content-store style=display:none value="Python 3.10.12">Python 3.10.12</textarea></div></div></div></div></div></div></div></main><div data-v-05bb3e02 class=fab-container><button data-v-05bb3e02 class=fab-scroll aria-label="Scroll to top"><svg data-v-05bb3e02 width=16 height=16 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true><path data-v-05bb3e02 d="M18 15l-6-6-6 6"></path></svg></button><button data-v-05bb3e02 class=fab-scroll aria-label="Scroll to bottom"><svg data-v-05bb3e02 width=16 height=16 viewBox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 aria-hidden=true><path data-v-05bb3e02 d="M6 9l6 6 6-6"></path></svg></button></div></div>
